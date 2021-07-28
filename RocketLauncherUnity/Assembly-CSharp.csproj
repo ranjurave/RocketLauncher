@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{68935561-146A-092C-1CE2-388EF65D57EF}</ProjectGuid>
+    <ProjectGuid>{E9B5486A-51E4-B51C-056C-D927FAF2615D}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -56,8 +56,9 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio Tools for Unity\16.0\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Script\Movement.cs" />
     <Compile Include="Assets\Script\RocketCollision.cs" />
+    <Compile Include="Assets\Script\Movement.cs" />
+    <Compile Include="Assets\Script\Oscillator.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

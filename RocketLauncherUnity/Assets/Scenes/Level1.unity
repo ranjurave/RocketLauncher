@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641258, b: 0.5748172, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -299,6 +299,26 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 6.779, y: 0, z: 0}
+--- !u!1 &1612604479 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8188515741349206087, guid: f20c6d7860ac073469523270cd0b56ec, type: 3}
+  m_PrefabInstance: {fileID: 8370380399125045604}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1612604484
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1612604479}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 15c89940956cb064c82a6a2ce2ebd225, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  movementVector: {x: 25.08, y: 0, z: 0}
+  movementFactor: 1
+  period: 2
 --- !u!1001 &1692092514
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -433,23 +453,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c41d58c0175469e4596bea6d98ea646a, type: 3}
---- !u!1 &1915468739 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1997207320628431382, guid: 1fc23a17dd6ede246bc65fdb28176e0a, type: 3}
-  m_PrefabInstance: {fileID: 6157494873792602276}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1915468744
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1915468739}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a3df17deb827dad429714c1e45a10cba, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &3663153525669627438
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -518,14 +521,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1915468742, guid: 1fc23a17dd6ede246bc65fdb28176e0a, type: 3}
-      propertyPath: m_Drag
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1915468742, guid: 1fc23a17dd6ede246bc65fdb28176e0a, type: 3}
-      propertyPath: m_Constraints
-      value: 56
-      objectReference: {fileID: 0}
     - target: {fileID: 1514223886561235838, guid: 1fc23a17dd6ede246bc65fdb28176e0a, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -574,6 +569,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rocker
       objectReference: {fileID: 0}
+    - target: {fileID: 6752728774858428674, guid: 1fc23a17dd6ede246bc65fdb28176e0a, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 346df77d3615f2349890afca9d6b74cb, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1fc23a17dd6ede246bc65fdb28176e0a, type: 3}
 --- !u!1001 &8370380399125045604

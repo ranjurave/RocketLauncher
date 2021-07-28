@@ -4,16 +4,19 @@ using UnityEngine;
 
 public class Movement : MonoBehaviour
 {
-    Rigidbody rocketRB;
-    [HideInInspector] public AudioSource rocketAS;
     [SerializeField] float mainThrust = 1000;
     [SerializeField] float rotationThrust = 100;
+    [SerializeField] AudioClip mainEngine;
 
-    // Start is called before the first frame update
+    [SerializeField] ParticleSystem rocketParticle;
+    Rigidbody rocketRB;
+    AudioSource rocketAS;
+
     void Start()
     {
         rocketRB =  GetComponent<Rigidbody>();
         rocketAS = GetComponent<AudioSource>();
+        
     }
 
     // Update is called once per frame
@@ -26,12 +29,16 @@ public class Movement : MonoBehaviour
         if (Input.GetKey(KeyCode.Space)) {
             //Debug.Log("thrusting");
             if (!rocketAS.isPlaying) {
-            rocketAS.Play();
+                rocketAS.PlayOneShot(mainEngine);
+            }
+            if (!rocketParticle.isPlaying) {
+                rocketParticle.Play();
             }
             rocketRB.AddRelativeForce(Vector3.up * mainThrust * Time.deltaTime);
         }
         else {
             rocketAS.Stop();
+            rocketParticle.Stop();
         }
 
     }
